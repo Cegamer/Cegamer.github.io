@@ -1,0 +1,265 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(8, 8, 8);
+
+}
+
+header {
+    background-color: black;
+    border-bottom: 5px solid rgb(32, 32, 32);
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    overflow:hidden;
+    box-shadow: 0px 0px 5px rgba(0, 255, 0, 0.431);
+    z-index: 10;
+}
+
+.header-containter-left{
+    box-sizing: content-box;
+    margin-left: 1em;
+    position: absolute;
+}
+.header-containter-left img{
+    position:absolute;    
+    margin-top: 10px;
+    width: 5em;
+    height: 5em;
+}
+.header-containter-left h2{
+    display: inline;
+    position: relative;
+    top: 5px;
+    margin-left: 25%;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 5em;
+}
+
+.header-container-right{
+    margin-top: -1px;
+    margin-right: 20px;
+    float: right;
+}
+
+
+.header-container-right button{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.header-botones-texto{
+    color: white;
+    background-color: black;
+    margin-left: -4px;
+    bottom:5px;
+    border-style: none;
+    padding: 34px 5px;
+
+}
+.header-botones-texto-activo{
+    background-color: white;
+    color: black;
+    margin-left: -4px;
+    bottom:5px;
+    border-style: none;
+    padding: 35px 5px;
+
+}
+.botones-imagen{
+    top: 5px;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-style: none;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+
+.botones-imagen img{
+    width: 100%;
+    height: 100%;
+}
+/*---------------------------------Acerca de--------------------------*/
+
+.about {
+    position: relative;
+    height: 40em;
+    border-bottom: 2px solid rgb(32, 32, 32);
+    border-width: medium;
+}
+.about-left-container {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    width: 400px;
+    height: 100%;
+    left: 4%;
+    top: 5%;
+}
+
+.about-left-container h3{
+    font-family: 'Satisfy', cursive ;
+    font-size: 800%;
+    font-weight: bolder;
+    line-height: 1em;
+}
+.about-left-container p{
+
+    display: inline;
+    word-wrap: break-word;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-weight: bolder;
+    font-size: 1.3em;
+    color: limegreen;
+}
+.about-left-container button{
+
+    position: relative;
+    top: 20px;
+
+    padding: 1em 2em;
+    background-color: green;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-weight: bolder;
+    font-size: 1.5em;
+
+    border: 0px none black;
+    border-radius: 20px;
+}
+.about-left-container button:hover{
+
+    background-color: rgb(0, 71, 0);
+
+}
+
+.about-right-container{ 
+    position:absolute;
+    right: 0;    
+    background-image: url("https://exygy.com/wp-content/uploads/2016/05/maxresdefault.jpg");
+    box-shadow: 20px 0 20px 20px rgb(8, 8, 8) inset;
+    width: 40%;
+    height: 100%;
+}
+
+.about-photo{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40em;
+    height: auto;
+}
+
+/*-------------------------------Habilidades--------------------*/
+
+.habilidades-container{
+    position: absolute;
+    margin: 50px 0px 0px 50px;
+    text-align: center;
+  
+}
+.habilidades{
+    border-bottom: 3px solid green;
+    height: 54em;
+}
+.habilidades h2{
+    position:relative;
+    display: inline-block;
+    color: white;
+    border-bottom: 5px solid rgba(0, 255, 0, 0.329);
+    border-radius: 5px;
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+    left: 40%;
+    font-size: 5em;
+}
+.habilidad-cuadro-exterior{
+    background-color: rgb(14, 14, 14);
+    margin-bottom: 40px;
+    height: 4em;
+    width: 52em;
+    padding: 1em 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0, 255, 0, 0.329);
+
+}
+
+.barra-container{
+    position: relative;
+    background-color: rgb(53, 53, 53);
+    border: 1px solid black;
+    left: 25px;
+    width: 600px;
+    height: 20px;
+    border-radius: 50px;
+    top: 5px;
+}
+.barra-container div{
+    background-color: green;
+    height: 100%;
+    z-index: 100;
+    border-radius: 50px;
+}
+
+.porcentajeAndImage-container{
+    right: 20px;
+    position: relative;
+    float: right;
+    bottom: 28px;
+    font-size: 2em;
+    text-align: center;
+    color: green;
+}
+.porcentajeAndImage-container img{
+    width: 49px;
+    height: auto;
+}
+.porcentajeAndImage-container b{
+    position: relative;
+    bottom: 15px;
+    right: 30px;
+}
+
+.habilidades-image img{
+    position: relative;
+    float: right;
+    top: 3em;
+    right: 3%;
+    width: 40%;
+    height: auto;
+    box-shadow: 0px 0px 5px rgba(50, 205, 50, 0.568); 
+    border-radius: 100px;
+
+}
+
+/*--------------------Habilidades Individuales-----------------*/
+
+._html{
+    width: 89%;
+}
+._css{
+    width: 76%;
+}
+._javascript{
+    width: 45%;
+}
+._python{
+    width: 35%;
+}
+._csharp{
+    width: 78%;
+}
+._unity{
+    width: 65%;
+}

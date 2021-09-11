@@ -1,0 +1,27 @@
+
+/*---------------------------------Acerca de--------------------------*/
+.about{
+    height: 54em;
+}
+.about-left-container {
+    width: 470px;
+    left: 4%;
+    top: 10%;
+}
+
+.about-left-container h3{
+    font-size: 1100%;
+    margin-bottom: 50px;
+}
+
+.about-right-container{ 
+ 
+    width: 40%;
+    height: 100%;
+}
+
+.about-photo{
+
+    right: 55%;
+    width: 50em;
+}
