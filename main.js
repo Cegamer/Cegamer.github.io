@@ -8,4 +8,9 @@ function headerdisabledButtonsetActive(enableButton) {
     enableButton.className = "header-botones-texto-activo";
 }
 
-
+var habilidadesScroll = document.querySelectorAll('.habilidad-cuadro-exterior');
+var proyectosScroll = document.querySelectorAll('.project-container')
+ScrollReveal().reveal(habilidadesScroll);
+ScrollReveal().reveal(proyectosScroll);
+ScrollReveal().reveal('.habilidades-image');
+ScrollReveal().reveal('.section-title')

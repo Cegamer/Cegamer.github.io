@@ -5,10 +5,23 @@
 }
 
 html,body{
-    height: 100%;
+    height: auto;
     width: 100%;
     background-color: rgb(8, 8, 8);
 
+}
+
+section{
+    text-align: center;
+}
+.section-title{
+    display: inline-block;
+    color: white;
+    border-bottom: 5px solid rgba(0, 255, 0, 0.329);
+    border-radius: 5px;
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+    font-size: 5em;
 }
 
 header {
@@ -169,21 +182,15 @@ header {
     text-align: center;
   
 }
+#habilidades{
+    position: relative;
+    top: -104px;
+}
 .habilidades{
     border-bottom: 3px solid green;
     height: 54em;
 }
-.habilidades h2{
-    position:relative;
-    display: inline-block;
-    color: white;
-    border-bottom: 5px solid rgba(0, 255, 0, 0.329);
-    border-radius: 5px;
-    margin-top: 0.5em;
-    margin-bottom: 0.2em;
-    left: 40%;
-    font-size: 5em;
-}
+
 .habilidad-cuadro-exterior{
     background-color: rgb(14, 14, 14);
     margin-bottom: 40px;
@@ -262,4 +269,63 @@ header {
 }
 ._unity{
     width: 65%;
+}
+
+/*---------------------------------Proyectos----------------------------*/
+
+.proyectos{
+    text-align: center;
+    box-sizing: content-box;
+    width:100%;
+    margin: 0 auto;
+}
+
+.project-container{
+    margin: 50px;
+    width: 32em;
+    height: 41em;
+    padding: 1em;
+
+    display:inline-block;
+
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+
+    background-color: rgb(14, 14, 14);
+    border-radius: 30px;
+    box-shadow: 0px 0px 4px rgba(0, 255, 0, 0.329);
+}
+
+.project-container h2{
+    font-size: 3em;
+    border-radius: 10px;
+    text-align: center;
+    background-color: green;
+    color: black;
+}
+.project-container img{
+    display: block;
+    margin: 15px auto;
+    width: 30em;
+    height: auto;
+}
+.project-container p{
+    font-size: 22px;
+    margin: 20px 40px;
+    margin-bottom: 0;
+    color:limegreen;
+    font-weight: bold;
+}
+.project-container button{
+    display: block;
+    margin: 15px auto;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 2.5em;
+}
+.project-container button:hover{
+    background-color: limegreen;
 }
