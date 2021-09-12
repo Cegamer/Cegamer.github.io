@@ -10,7 +10,9 @@ function headerdisabledButtonsetActive(enableButton) {
 
 var habilidadesScroll = document.querySelectorAll('.habilidad-cuadro-exterior');
 var proyectosScroll = document.querySelectorAll('.project-container')
+var certificadoScroll = document.querySelectorAll('.certificado-container')
 ScrollReveal().reveal(habilidadesScroll);
 ScrollReveal().reveal(proyectosScroll);
+ScrollReveal().reveal(certificadoScroll);
 ScrollReveal().reveal('.habilidades-image');
 ScrollReveal().reveal('.section-title')
