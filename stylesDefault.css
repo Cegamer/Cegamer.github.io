@@ -187,7 +187,6 @@ header {
     top: -104px;
 }
 .habilidades{
-    border-bottom: 3px solid green;
     height: 54em;
 }
 
@@ -238,10 +237,14 @@ header {
     right: 30px;
 }
 
+.habilidades-image{
+    height: fit-content;
+}
+
 .habilidades-image img{
     position: relative;
     float: right;
-    top: 3em;
+    margin-top: 3em;
     right: 3%;
     width: 40%;
     height: auto;
