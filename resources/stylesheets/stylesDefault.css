@@ -318,14 +318,21 @@ header {
     background-color: green;
     color: black;
 }
+
 .project-container img{
-    display: block;
+    border-radius: 5px;
     margin: 15px auto;
+    display: block;
     width: 30em;
     height: auto;
-    border-radius: 5px;
+    width: 100%;
+
+}
+.project-container a{
+    text-decoration: none;
 }
 .project-container p{
+    height:28%; 
     font-size: 22px;
     margin: 20px 40px;
     margin-bottom: 0;
@@ -334,7 +341,7 @@ header {
 }
 .project-container button{
     display: block;
-    margin: 15px auto;
+    margin: 20px auto;
     background-color: lightgreen;
     border: none;
     border-radius: 20px;
@@ -342,7 +349,7 @@ header {
     font-size: 2.5em;
 }
 .project-container button:hover{
-    background-color: limegreen;
+    background-color: rgb(80, 255, 80);
 }
 
 /*-----------------------Certificados-------------------*/
