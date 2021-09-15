@@ -15,7 +15,7 @@
 }
 
 .about-right-container{ 
- 
+
     width: 40%;
     height: 100%;
 }
@@ -24,4 +24,15 @@
 
     right: 55%;
     width: 50em;
+}
+.habilidades-image img{
+    visibility:visible;
+}
+
+.habilidades-container{
+    display: inherit;
+    text-align: center;
+    position: absolute;
+    margin: 50px 0px 0px 50px;
+    width: auto;
 }

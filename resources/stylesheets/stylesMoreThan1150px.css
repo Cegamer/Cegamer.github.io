@@ -1,6 +1,5 @@
 
 /*---------------------------------Acerca de--------------------------*/
-
 .about-left-container {
     width: 400px;
     left: 4%;
@@ -12,7 +11,7 @@
 }
 
 .about-right-container{ 
-   
+
     width: 40%;
     height: 100%;
 }
@@ -21,4 +20,8 @@
 
     right: 30%;
     width: 40em;
+}
+
+.habilidades-image img{
+    visibility: hidden;
 }

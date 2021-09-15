@@ -26,8 +26,10 @@ html,body{
 
 section{
     text-align: center;
+    width: 100%;
 }
 .section-title{
+    text-align: center;
     display: inline-block;
     color: white;
     border-bottom: 5px solid rgba(0, 255, 0, 0.329);
@@ -190,10 +192,12 @@ header {
 /*-------------------------------Habilidades--------------------*/
 
 .habilidades-container{
+    display: block;
     position: absolute;
-    margin: 50px 0px 0px 50px;
+    margin: 50px auto;
     text-align: center;
-  
+    width: 100%;
+    
 }
 
 .habilidades{
@@ -202,6 +206,7 @@ header {
 
 .habilidad-cuadro-exterior{
     background-color: rgb(14, 14, 14);
+    margin: 0 auto;
     margin-bottom: 40px;
     height: 4em;
     width: 52em;
@@ -252,6 +257,7 @@ header {
 }
 
 .habilidades-image img{
+    visibility: hidden;
     position: relative;
     float: right;
     margin-top: 3em;
@@ -262,6 +268,7 @@ header {
     border-radius: 100px;
 
 }
+
 
 /*--------------------Habilidades Individuales-----------------*/
 
@@ -296,62 +303,97 @@ header {
 
 .project-container{
     margin: 50px;
-    width: 32em;
-    height: 41em;
-    padding: 1em;
+  
+    padding: 1.3em;
 
-    display:inline-block;
+    display:flex;    
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
 
     background-color: rgb(14, 14, 14);
-    border-radius: 30px;
     box-shadow: 0px 0px 4px rgba(0, 255, 0, 0.329);
 }
 
-.project-container h2{
-    font-size: 3em;
-    border-radius: 10px;
-    text-align: center;
-    background-color: green;
-    color: black;
+
+.project-img-container{
+    display: flex;
+    flex: 1;
+    background-color: transparent !important;
+    min-width: 720px;
+    max-width: 720px;
+    margin: 20px 0;
 }
 
 .project-container img{
-    border-radius: 5px;
-    margin: 15px auto;
-    display: block;
-    width: 30em;
-    height: auto;
     width: 100%;
-
+    display: inline-block;
 }
+.project-container h2{
+    font-size: 3em;
+    text-align: left;
+    border-bottom: 5px green solid;
+    display: inline-block;
+    width: 100%;
+    color: white;
+}
+.text-container{
+    text-align: left;
+    height: auto;
+    padding: 0 40px;
+    flex: 2 1;
+}
+
 .project-container a{
     text-decoration: none;
 }
+
 .project-container p{
-    height:28%; 
-    font-size: 22px;
-    margin: 20px 40px;
-    margin-bottom: 0;
+    font-size: 30px;
+    margin: 40px 0;
     color:limegreen;
     font-weight: bold;
+    display: block;
+    text-align: justify;
 }
 .project-container button{
-    display: block;
-    margin: 20px auto;
+    width: 7em;
     background-color: lightgreen;
     border: none;
-    border-radius: 20px;
     padding: 10px;
     font-size: 2.5em;
 }
 .project-container button:hover{
     background-color: rgb(80, 255, 80);
 }
+@media (min-width:1212px ) and (max-width:1530px){
 
+    .project-img-container{
+
+        min-width: 400px;
+    }
+
+    .text-container h2{
+        font-size: 25px;
+    }
+    .text-container p{
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .text-container button{
+        font-size: 20px;
+    }
+}
+@media (max-width:1212px) {
+    .text-container button{
+        display: block;
+        margin: auto;
+    }
+}
 /*-----------------------Certificados-------------------*/
 .certificados{
     text-align: center;
@@ -361,10 +403,10 @@ header {
     margin-bottom: 2em;
 }
 .certificado-container{
-    margin: 50px;
-    width: 50em;
-    height: 36em;
-    padding: 2em;
+    margin: 40px;
+    width: 40em;
+
+    padding: 3em;
 
     display:inline-block;
 
@@ -373,27 +415,10 @@ header {
     font-weight: bolder;
 
     background-color: rgb(14, 14, 14);
-    border-radius: 30px;
     box-shadow: 0px 0px 4px rgba(0, 255, 0, 0.329);
 }
 
 .certificado-container img{
-    width: 35em;
-    height: auto;
-    border-radius: 5px;
-}
-.certificado-container h3{
-    font-size: 4em;
-    margin: 0;
-}
-.certificado-container button{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    padding: 8px;
-    width: 6em;
-    border-radius: 20px;
-    border:none;
-    font-size: 30px;
-    background-color: lightgreen;
-
+    width: 100%;
+    height: 25em;
 }
