@@ -110,6 +110,7 @@ header {
 }
 .header-containter-left h2{
     display: inline;
+    align-self: center;
     position: relative;
     left: 100px;
     color: white;
@@ -209,7 +210,6 @@ header {
 
     display: inline-block;
     word-wrap: break-word;
-    text-align: justify;
     font-family: Arial, Helvetica, sans-serif ;
     font-weight: bolder;
     font-size: 1.3em;
