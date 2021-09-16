@@ -3,7 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+:root{
+    --colorLetras: limegreen;
+    --colorContainers: rgb(14, 14, 14); /*rgb(14, 14, 14)*/
+}
 html,body{
     height: auto;
     width: 100%;
@@ -97,17 +100,17 @@ header {
     box-sizing: content-box;
     margin-left: 1em;
     position: absolute;
+    display: flex;
+    align-items: center;
 }
 .header-containter-left img{
     position:absolute;    
-    margin-top: 10px;
     width: 5em;
     height: 5em;
 }
 .header-containter-left h2{
     display: inline;
-    position: absolute;
-    top: 5px;
+    position: relative;
     left: 100px;
     color: white;
     font-family: 'Courier New', Courier, monospace;
@@ -136,6 +139,9 @@ header {
     border-style: none;
     padding: 34px 5px;
 
+}
+.header-botones-texto:hover{
+    background-color: rgb(36, 36, 36);
 }
 .header-botones-texto-activo{
     background-color: white;
@@ -190,7 +196,7 @@ header {
     width: 370px;
     height: 100%;
     left: 4%;
-    top: 3%;
+    top: 5%;
 }
 
 .about-left-container h3{
@@ -203,10 +209,11 @@ header {
 
     display: inline-block;
     word-wrap: break-word;
+    text-align: justify;
     font-family: Arial, Helvetica, sans-serif ;
     font-weight: bolder;
     font-size: 1.3em;
-    color: limegreen;
+    color: var(--colorLetras);
 }
 .about-left-container button{
 
@@ -263,7 +270,7 @@ header {
 }
 
 .habilidad-cuadro-exterior{
-    background-color: rgb(14, 14, 14);
+    background-color: var(--colorContainers);
     margin: 0 auto;
     margin-bottom: 40px;
     height: 4em;
@@ -373,7 +380,7 @@ header {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
 
-    background-color: rgb(14, 14, 14);
+    background-color: var(--colorContainers);
     box-shadow: 0px 0px 4px rgba(0, 255, 0, 0.329);
 }
 
@@ -413,7 +420,7 @@ header {
 .project-container p{
     font-size: 30px;
     margin: 40px 0;
-    color:limegreen;
+    color:var(--colorLetras);
     font-weight: bold;
     display: block;
     text-align: justify;
@@ -472,7 +479,7 @@ header {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
 
-    background-color: rgb(14, 14, 14);
+    background-color: var(--colorContainers);
     box-shadow: 0px 0px 4px rgba(0, 255, 0, 0.329);
 }
 
@@ -528,6 +535,6 @@ footer{
     position: relative;
     float: left;
     display: block;
-    color:limegreen;
+    color:var(--colorLetras);
     margin: 10px;
 }
