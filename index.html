@@ -46,8 +46,33 @@
             <a href="https://stackoverflow.com/users/16368522/cegamer" target="_blank"><button
                     class="botones-imagen"><img
                         src="https://cdn.worldvectorlogo.com/logos/stack-overflow.svg"></button></a>
+            <a href="https://www.youtube.com/c/CegamerYT" target="_blank"><button class="botones-imagen"><img
+                        src="https://cdn.icon-icons.com/icons2/2429/PNG/512/youtube_logo_icon_147199.png"></button></a>
+
         </nav>
+        <button class="boton-menu-mobile botones-imagen" onclick="enableAndroidMenu();"
+            style="filter: invert(100%);  position: absolute; right: 10px; top: 10px; width: 5em; height: auto;"> <img
+                src="https://cdn2.iconfinder.com/data/icons/flat-ui-icons-24-px/24/menu-24-512.png" alt=""></button>
+
     </header>
+    <div class="header-mobile" id="mobile-menu">
+        <a href="#about"><button class="header-mobile-botones-texto" onclick="enableAndroidMenu();">Acerca
+                De</button></a>
+        <a href="#habilidades"><button class="header-mobile-botones-texto"
+                onclick="enableAndroidMenu();">Habilidades</button></a>
+        <a href="#proyectos"><button class="header-mobile-botones-texto"
+                onclick="enableAndroidMenu();">Proyectos</button></a>
+        <a href="#certificados"><button class="header-mobile-botones-texto"
+                onclick="enableAndroidMenu();">Certificados</button></a>
+        <a href="https://github.com/Cegamer" target="_blank"><button onclick="enableAndroidMenu();" class="mobile-botones-imagen"><img
+                    src="https://i.ibb.co/61KNGjh/25231.png"></button></a>
+        <a href="https://stackoverflow.com/users/16368522/cegamer" target="_blank"><button onclick="enableAndroidMenu();"
+                class="mobile-botones-imagen"><img
+                    src="https://cdn.worldvectorlogo.com/logos/stack-overflow.svg"></button></a>
+        <a href="https://www.youtube.com/c/CegamerYT" target="_blank"><button onclick="enableAndroidMenu();" class="mobile-botones-imagen"><img
+                    src="https://cdn.icon-icons.com/icons2/2429/PNG/512/youtube_logo_icon_147199.png"></button></a>
+    </div>
+    <button class="fixer" id="fixer" button onclick="enableAndroidMenu();"></button>
 
     <div class="about">
         <div class="about-left-container">
@@ -56,7 +81,7 @@
                 lenguajes
                 de programación como Python y C#, además de motores de videojuegos como Unity y Unreal Engine
             </p>
-            <a><button>Contáctame</button></a>
+            <a href="#footer"><button>Contáctame</button></a>
         </div>
         <div class="about-right-container">
             <img src="https://i.ibb.co/88C2qQT/Munano-Con-Boca.png" class="about-photo">
@@ -72,7 +97,7 @@
                     <div class="_html"></div>
                 </div>
                 <div class="porcentajeAndImage-container">
-                    <b>89%</b>
+                    <b>69%</b>
                     <img src="https://www.w3.org/html/logo/downloads/HTML5_1Color_White.png">
                 </div>
             </div>
@@ -82,7 +107,7 @@
                     <div class="_css"></div>
                 </div>
                 <div class="porcentajeAndImage-container">
-                    <b>76%</b>
+                    <b>46%</b>
                     <img src="https://www.yolearnonline.com/img/css.png">
                 </div>
             </div>
@@ -92,7 +117,7 @@
                     <div class="_javascript"></div>
                 </div>
                 <div class="porcentajeAndImage-container">
-                    <b>45%</b>
+                    <b>35%</b>
                     <img src="https://jamesingram2.github.io/images/client-3.png">
                 </div>
             </div>
@@ -112,7 +137,7 @@
                     <div class="_csharp"></div>
                 </div>
                 <div class="porcentajeAndImage-container">
-                    <b>78%</b>
+                    <b>58%</b>
                     <img src="https://i.ibb.co/cLqnpY9/Sin-t-tulo-1.png">
                 </div>
             </div>
@@ -122,7 +147,7 @@
                     <div class="_unity"></div>
                 </div>
                 <div class="porcentajeAndImage-container">
-                    <b>65%</b>
+                    <b>35%</b>
                     <img src="https://chakra3d.com/wp-content/uploads/2019/12/unity-logo.png">
                 </div>
             </div>
@@ -190,11 +215,23 @@
     </section>
 
     <section>
-        <form class="contacto-container">
-            
-
-        </form>
+        <h2 class="section-title contacto">Contacto</h2>
+        <div class="contact-data-container">
+            <div>
+                <img src="https://image.flaticon.com/icons/png/512/95/95645.png" class="invert" alt="">
+                <p>cegamersocialmedia@gmail.com</p>
+            </div>
+            <div>
+                <img src="https://www.edigitalagency.com.au/wp-content/uploads/new-instagram-logo-white-border-icon-png-large.png"
+                    alt="">
+                <p>Cegamer</p>
+            </div>
+        </div>
     </section>
+
+    <footer id="footer">
+        <p>© Copyright Cegamer - Todos los Derechos Reservados</p>
+    </footer>
     <script src="main.js"></script>
 </body>
 
