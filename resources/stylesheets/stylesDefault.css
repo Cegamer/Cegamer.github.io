@@ -106,9 +106,9 @@ header {
 }
 .header-containter-left h2{
     display: inline;
-    position: relative;
+    position: absolute;
     top: 5px;
-    margin-left: 25%;
+    left: 100px;
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-size: 5em;
@@ -187,10 +187,10 @@ header {
 .about-left-container {
     position: absolute;
     color: rgb(255, 255, 255);
-    width: 400px;
+    width: 370px;
     height: 100%;
     left: 4%;
-    top: 5%;
+    top: 3%;
 }
 
 .about-left-container h3{
@@ -201,7 +201,7 @@ header {
 }
 .about-left-container p{
 
-    display: inline;
+    display: inline-block;
     word-wrap: break-word;
     font-family: Arial, Helvetica, sans-serif ;
     font-weight: bolder;
