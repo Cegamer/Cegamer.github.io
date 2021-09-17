@@ -93,7 +93,7 @@ header {
     top: 0;
     overflow:hidden;
     box-shadow: 0px 0px 5px rgba(0, 255, 0, 0.431);
-    z-index: 10;
+    z-index: 101;
 }
 
 .header-containter-left{
@@ -111,8 +111,7 @@ header {
 .header-containter-left h2{
     display: inline;
     align-self: center;
-    position: relative;
-    left: 100px;
+    margin-left: 100px;
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-size: 5em;
@@ -294,7 +293,7 @@ header {
 .barra-container div{
     background-color: green;
     height: 100%;
-    z-index: 100;
+    z-index: 90;
     border-radius: 50px;
 }
 
