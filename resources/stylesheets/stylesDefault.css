@@ -26,6 +26,9 @@ html,body{
     position: relative;
     top: -100px;
 }
+button:hover{
+    cursor:pointer;
+}
 
 section{
     text-align: center;
