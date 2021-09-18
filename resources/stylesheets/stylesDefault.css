@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 :root{
     --colorLetras: limegreen;
@@ -12,6 +13,10 @@ html,body{
     width: 100%;
     background-color: rgb(8, 8, 8);
 
+}
+
+button{
+    transition: background-color .5s;
 }
 
 #habilidades{
@@ -52,7 +57,6 @@ section{
     display: block;
     background-color: rgb(0, 0, 0);
     width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     padding: 0 20%;
 }
@@ -112,11 +116,8 @@ header {
     height: 5em;
 }
 .header-containter-left h2{
-    display: inline;
-    align-self: center;
     margin-left: 100px;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
     font-size: 5em;
 }
 
@@ -129,7 +130,6 @@ header {
 
 .header-container-right button{
     position: relative;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     font-size: 1.5em;
 }
@@ -204,7 +204,7 @@ header {
 
 .about-left-container h3{
     font-family: 'Satisfy', cursive ;
-    font-size: 800%;
+    font-size: 15vh;
     font-weight: bolder;
     line-height: 1em;
 }
@@ -226,23 +226,21 @@ header {
     padding: 1em 2em;
     background-color: green;
     color: white;
-    font-family: Arial, Helvetica, sans-serif ;
     font-weight: bolder;
     font-size: 1.5em;
-
     border: 0px none black;
     border-radius: 20px;
 }
 .about-left-container button:hover{
 
     background-color: rgb(0, 71, 0);
-
 }
 
 .about-right-container{ 
     position:absolute;
     right: 0;    
     background-image: url("https://exygy.com/wp-content/uploads/2016/05/maxresdefault.jpg");
+    background-size: cover;
     box-shadow: 20px 0 20px 20px rgb(8, 8, 8) inset;
     width: 40%;
     height: 100%;
@@ -255,7 +253,9 @@ header {
     width: 40em;
     height: auto;
 }
-
+@media screen and (max-height: 720px) {
+    
+}
 /*-------------------------------Habilidades--------------------*/
 
 .habilidades-container{
@@ -435,7 +435,7 @@ header {
     font-size: 2.5em;
 }
 .project-container button:hover{
-    background-color: rgb(80, 255, 80);
+    background-color: rgb(52, 230, 52);
 }
 @media (min-width:1212px ) and (max-width:1530px){
 
