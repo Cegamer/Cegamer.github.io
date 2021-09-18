@@ -131,7 +131,7 @@ header {
 .header-container-right button{
     position: relative;
     font-weight: bolder;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .header-botones-texto{
@@ -166,7 +166,9 @@ header {
     margin-right: 0.5em;
     margin-left: 0.5em;
 }
-
+.boton-menu-mobile{
+    margin-right: 30px;
+}
 .botones-imagen img{
     width: 100%;
     height: 100%;
