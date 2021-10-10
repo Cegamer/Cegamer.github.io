@@ -10,18 +10,17 @@ function headerdisabledButtonsetActive(enableButton) {
 var mMFixer = document.getElementById("fixer");
 var mobileMenu = document.getElementById("mobile-menu");
 var mobileMenuEnabled = false;
-function enableAndroidMenu(){
-    if(!mobileMenuEnabled){
+function enableAndroidMenu() {
+    if (!mobileMenuEnabled) {
         mobileMenu.style.visibility = "visible";
         mMFixer.style.visibility = "visible";
         mobileMenuEnabled = true;
     }
-    else{
+    else {
         mobileMenu.style.visibility = "hidden";
-        mMFixer.style.visibility = "hidden";
+        mMFixer.style.visibility = "hidden"; 
         mobileMenuEnabled = false;
     }
-
 }
 
 var habilidadesScroll = document.querySelectorAll('.habilidad-cuadro-exterior');

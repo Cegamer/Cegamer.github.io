@@ -241,7 +241,7 @@ header {
 .about-right-container{ 
     position:absolute;
     right: 0;    
-    background-image: url("https://exygy.com/wp-content/uploads/2016/05/maxresdefault.jpg");
+    background-image: url("/resources/Images/about_background.png");
     background-size: cover;
     box-shadow: 20px 0 20px 20px rgb(8, 8, 8) inset;
     width: 40%;
