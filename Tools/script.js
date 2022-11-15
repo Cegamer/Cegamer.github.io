@@ -79,8 +79,9 @@ function dibujarLinea(xAnterior,yAnterior,x,y){
     canvasContext.closePath() 
 }
 
-string = ""
+
 function exportarPuntos(){
+    string = ""
     for(a = 0; a < dibujo.length;a++){
         string += "\nE.append(np.array("
         puntos = "["
@@ -95,8 +96,13 @@ function exportarPuntos(){
         puntos += "]"
         string += puntos + "))"
     }
-    console.log(string) 
+    console.log(string)
+    document.getElementById("numero").innerHTML = string
+ 
+    return(string)
 }
+
+
 
 function terminarTrazo(){
     dibujo.push(points)
