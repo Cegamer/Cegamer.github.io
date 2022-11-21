@@ -3,12 +3,20 @@ canvasContext = canvas.getContext('2d')
 dibujo = []
 points = []
 imagen = new Image()
-imagen.src = "naruto.jpeg"
+imagen.src = "wey.png"
 imagen.onload = function(){
     canvas.width = imagen.width;
     canvas.height = imagen.height;
     canvasContext.drawImage(imagen,0,0)
 }
+
+var loadFile = function(event) {
+    console.log(URL.createObjectURL(event.target.files[0]))
+	imagen.src = URL.createObjectURL(event.target.files[0]);
+    canvas.width = imagen.width;
+    canvas.height = imagen.height;
+    canvasContext.drawImage(imagen,0,0)
+};
 
 canvas.addEventListener('mousedown', function(e) {
     puntos = getCursorPosition(canvas, e)
@@ -81,7 +89,8 @@ function dibujarLinea(xAnterior,yAnterior,x,y){
 
 
 function exportarPuntos(){
-    string = ""
+    terminarTrazo()
+    string = "E = []"
     for(a = 0; a < dibujo.length;a++){
         string += "\nE.append(np.array("
         puntos = "["
@@ -97,7 +106,7 @@ function exportarPuntos(){
         string += puntos + "))"
     }
     console.log(string)
-    document.getElementById("numero").innerHTML = string
+    document.getElementById("salida").value = string
  
     return(string)
 }
